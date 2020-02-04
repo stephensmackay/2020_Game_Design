@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01b4a3ec75384ba4298cc751153ac67d, type: 3}
   m_Name: Standard
   m_EditorClassIdentifier: 
-  speed: 10
-  orientSpeed: 3
-  gravity: -9.81
+  speed: 20
+  orientSpeed: 5
+  gravity: -18
   jumpSpeed: 75
-  jumpSpeed: 75
-  gravity: 3
