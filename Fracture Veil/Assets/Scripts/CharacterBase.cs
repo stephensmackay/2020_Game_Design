@@ -12,6 +12,7 @@ public abstract class CharacterBase : ScriptableObject
     public float gravity = -9.81f;
     public float jumpSpeed = 75f;
     public abstract void Move();
+    public abstract void Jump();
     protected Vector3 Position;
 
 }

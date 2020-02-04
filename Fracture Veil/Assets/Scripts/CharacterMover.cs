@@ -16,11 +16,14 @@ public class CharacterMover : CharacterBase
         
         Controller.Move(Location * Time.deltaTime);
 
-        
-       if(Input.GetKeyDown("space"))
-       {
-           Position.y = jumpSpeed;
-       }
-       
+    }
+
+    public override void Jump()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            Debug.Log(name);
+            Position.y = jumpSpeed;
+        }
     }
 }
