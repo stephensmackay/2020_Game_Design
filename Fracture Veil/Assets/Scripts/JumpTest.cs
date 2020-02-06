@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngineInternal.Input;
+﻿using UnityEngine;
+
 
 public class JumpTest : MonoBehaviour
 {
@@ -11,31 +8,34 @@ public class JumpTest : MonoBehaviour
 
     public Vector3 Location, Orientation;
 
-    public float speed = 1f, orientSpeed = 30f, gravity = -9.81f, jumpSpeed = 75f;
+    public float speed = 10f, orientSpeed = 10f, gravity = -9.81f, jumpSpeed = 15f;
     
-    //void Move(CharacterController controller)
-    //{
-  
-    //}   
-    
-    // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Location = new Vector3(Input.GetAxis("Vertical")*speed,gravity,0);       
-        Orientation.y = Input.GetAxis("Horizontal") * orientSpeed;
-        
-
-        controller.transform.Rotate(Orientation);
-        Location = controller.transform.TransformDirection(Location);
+        if (controller.isGrounded)
+        {
+            Location = new Vector3(Input.GetAxis("Vertical")*speed,0,0);       
+            Orientation.y = Input.GetAxis("Horizontal") * orientSpeed;
+            controller.transform.Rotate(Orientation);
+            Location = controller.transform.TransformDirection(Location);
+        }
+        //Location.y += gravity;
         
         controller.Move(Location * Time.deltaTime);
+
+        if (Input.GetButton("Jump"))
+        {
+            Location.y += jumpSpeed;
+        }
+        else
+        {
+            Location.y += gravity;
+        }
     }
 
-    //public CharacterController Controller { get; set; }
 }
