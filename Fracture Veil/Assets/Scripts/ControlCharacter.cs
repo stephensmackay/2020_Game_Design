@@ -9,6 +9,7 @@ public class ControlCharacter : MonoBehaviour
 
     public float speed = 12f, orientSpeed = 4f, gravity = -9.81f, jumpSpeed = 80f;
     
+   
     void Start()
     {
         controller = GetComponent<CharacterController>();
