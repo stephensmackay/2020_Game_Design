@@ -5,14 +5,14 @@ public class KeyboardButtons : MonoBehaviour
 {
     public UnityEvent enterButtonDown;
 
-    void update()
+
+    void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            Debug.Log("Name");
             enterButtonDown.Invoke();
         }
-
+        
     }
 
 }
