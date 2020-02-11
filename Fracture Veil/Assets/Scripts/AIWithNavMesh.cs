@@ -15,6 +15,16 @@ public class AIWithNavMesh : MonoBehaviour
         destination = transform;
         agent = GetComponent<NavMeshAgent>();
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        destination = player;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        destination = transform;
+    }
 }
 
 
