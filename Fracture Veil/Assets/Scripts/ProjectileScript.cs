@@ -10,10 +10,10 @@ public class ProjectileScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown(KeyCode.Z))
-        {
-            GameObject clone;
-            clone = Instantiate()
-        }
+        //if (Input.GetButtonDown(KeyCode.Z))
+        //{
+            //GameObject clone;
+            //clone = Instantiate();
+        //}
     }
 }

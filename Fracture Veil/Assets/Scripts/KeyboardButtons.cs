@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class KeyboardButtons : MonoBehaviour
 {
-    public UnityEvent enterButtonDown, enterButtonDown2;
+    public UnityEvent enterButtonDown, enterButtonDown2, enterButtonDown3, buttonUp3;
 
 
     void Update()
@@ -18,7 +18,15 @@ public class KeyboardButtons : MonoBehaviour
             enterButtonDown2.Invoke();
         }
         
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            enterButtonDown3.Invoke();
+        }
         
+        if (Input.GetKeyUp(KeyCode.C))
+        {
+            buttonUp3.Invoke();
+        }
         
     }
 
