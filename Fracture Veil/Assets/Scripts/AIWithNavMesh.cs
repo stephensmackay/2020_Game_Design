@@ -18,9 +18,18 @@ public class AIWithNavMesh : MonoBehaviour
 
     private void Update()
     {
-        agent.destination = player.position;
+        
     }
 
+    public void UpdateAgentDestination(Vector3Data data)
+    {
+        agent.destination = data.Vector3Obj;
+    }
+
+    public void StopAgentDestination()
+    {
+        agent.destination = transform.position;
+    }
 
     //private void OnTriggerEnter(Collider other)
     //{
