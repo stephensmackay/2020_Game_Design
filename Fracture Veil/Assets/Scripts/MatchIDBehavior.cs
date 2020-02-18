@@ -2,32 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MatchIDBehavior : MonoBehaviour
+public class MatchIDBehavior : IDBehavior
 {
-    public List<NameID> NameIDs;
-
-    private NameID otherIDObj;
-
-    public List<DoWork> DoWorks;
-    
-    private void OnTriggerEnter(Collider other)
+    [Serializable]
+    public struct possibleMatches
     {
-        otherIDObj = other.GetComponent<IDBehavior>().nameIDObjs;
-        CheckID();
+        public NameID nameIDObj;
+        public DoWork DoWorkObj;
+        
     }
 
-    private void CheckID()
-    {
-        foreach (var obj in NameIDs)
-        {
-            if (obj == otherIDObj)
-            {
-                foreach (var job in DoWorks)
-                {
-                    job.Work();
-                }
-            }
-            
-        }
-    }
+    public List<possibleMatches> workIDList;
 }

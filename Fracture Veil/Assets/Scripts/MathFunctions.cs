@@ -10,6 +10,7 @@ public class MathFunctions : DoWork
     public override void Work()
     {
         floatDataObj.value++;
+        workEvent.Invoke();
     }
     
 }
