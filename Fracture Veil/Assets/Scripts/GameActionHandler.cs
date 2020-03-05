@@ -10,7 +10,7 @@ public class GameActionHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        action.raiseNoArgs += Respond;
+        //action.raiseNoArgs += Respond;
     }
 
     private void Respond()

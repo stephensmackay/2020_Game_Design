@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ee254384f38d94ebdef2da7b8cbb19, type: 3}
   m_Name: New String List Data
   m_EditorClassIdentifier: 
-  stringListObj: []
+  stringListObj:
+  - 
+  - My Name
+  - Is Inigo Montoya
+  - You killed My Father
+  - Prepare to Die
   currentLineNumber: 0
