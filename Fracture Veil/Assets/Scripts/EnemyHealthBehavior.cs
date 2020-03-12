@@ -1,30 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Timeline;
 
 public class EnemyHealthBehavior : MonoBehaviour
 {
     public int enemyHealth = 3;
 
-    void modifyHealth(int amount)
+    public void modifyHealth(int amount)
     {
+        Debug.Log(message: "beingattacked");
         enemyHealth += amount;
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        modifyHealth(-1);
-    }
-
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
 }
