@@ -8,7 +8,7 @@ public class KeyboardButtons : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.RightControl))
         {
             enterButtonDown.Invoke();
         }
@@ -18,12 +18,12 @@ public class KeyboardButtons : MonoBehaviour
             enterButtonDown2.Invoke();
         }
         
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.RightShift))
         {
             enterButtonDown3.Invoke();
         }
         
-        if (Input.GetKeyUp(KeyCode.C))
+        if (Input.GetKeyUp(KeyCode.RightShift))
         {
             buttonUp3.Invoke();
         }

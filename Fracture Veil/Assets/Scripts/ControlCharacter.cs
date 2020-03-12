@@ -28,7 +28,7 @@ public class ControlCharacter : MonoBehaviour
         
         
         
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             Location.y = jumpSpeed;
         }
