@@ -3,6 +3,8 @@ using UnityEngine.Timeline;
 
 public class EnemyHealthBehavior : MonoBehaviour
 {
+
+    //public GameObject thisObj;
     public int enemyHealth = 3;
 
     public void modifyHealth(int amount)
@@ -11,4 +13,18 @@ public class EnemyHealthBehavior : MonoBehaviour
         enemyHealth += amount;
     }
 
+    public void DisableObj()
+    {
+        if (enemyHealth < 1)
+        {
+            return;
+        }
+        else
+        {
+            Debug.Log("Destroy");
+            gameObject.SetActive(false);
+        }
+    }
+
+   
 }
