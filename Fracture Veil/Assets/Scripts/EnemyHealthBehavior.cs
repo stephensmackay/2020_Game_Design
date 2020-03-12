@@ -15,15 +15,12 @@ public class EnemyHealthBehavior : MonoBehaviour
 
     public void DisableObj()
     {
-        if (enemyHealth < 1)
-        {
-            return;
-        }
-        else
+        if (enemyHealth == 0)
         {
             Debug.Log("Destroy");
             gameObject.SetActive(false);
         }
+        
     }
 
    

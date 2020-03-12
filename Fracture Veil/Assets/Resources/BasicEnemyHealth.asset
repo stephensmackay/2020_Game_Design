@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74a535c1ea401b2438c379f23a1f406b, type: 3}
   m_Name: BasicEnemyHealth
   m_EditorClassIdentifier: 
-  value: 0
+  value: 3
