@@ -54,4 +54,11 @@ public class Collections : ScriptableObject
             currentCollectibleNum = 0;
         }
     }
+
+    public void printMessage(string message)
+    {
+        Debug.Log(message);
+    }
+    
+    
 }
