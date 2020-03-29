@@ -9,6 +9,7 @@ public class FloatData : ScriptableObject
  
  public void modifyValue(float f)
  {
+     Debug.Log("Update");
      value += f;
  }
 

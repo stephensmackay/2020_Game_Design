@@ -8,6 +8,7 @@ public class GameAction : ScriptableObject
     public UnityAction<object> raise;
     public UnityAction<Coroutine> raiseCoroutine;
     public UnityAction raiseNoArgs;
+    public object action;
 
     //Overloading
     public void RaiseAction()
