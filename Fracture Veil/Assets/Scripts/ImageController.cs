@@ -27,5 +27,6 @@ public class ImageController : MonoBehaviour
     public void UpdateImageComponent(FloatData dataObj)
     {
         imageComponent.fillAmount = dataObj.value;
+        Debug.Log(dataObj.value);
     }
 }
