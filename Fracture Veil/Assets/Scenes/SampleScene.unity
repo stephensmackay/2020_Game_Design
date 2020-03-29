@@ -8566,6 +8566,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 131
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 51.992}
+--- !u!1 &1149871933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 416855978, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5632526430102234004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1149871938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149871933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3b4526e382d4e46b6d9792dda0d142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1417657254}
+        m_MethodName: UpdateImageHandler
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1150748193
 GameObject:
   m_ObjectHideFlags: 0
@@ -11201,6 +11240,7 @@ GameObject:
   - component: {fileID: 1417657251}
   - component: {fileID: 1417657253}
   - component: {fileID: 1417657252}
+  - component: {fileID: 1417657254}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -11264,6 +11304,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417657250}
   m_CullTransparentMesh: 0
+--- !u!114 &1417657254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417657250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bee30b60b3d428478eeb5052ae6b3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: f1aed466fd3216e409b16e749284da2a, type: 2}
 --- !u!1 &1441477740
 GameObject:
   m_ObjectHideFlags: 0
