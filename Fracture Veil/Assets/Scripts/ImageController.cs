@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
@@ -10,8 +11,9 @@ public class ImageController : MonoBehaviour
     private void Start ()
     {
         imageComponent = GetComponent<Image>();
-    }
+        }
 
+    
     public void UpdateImageHandler()
     {
         Debug.Log("Got");
