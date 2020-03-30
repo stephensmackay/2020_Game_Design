@@ -11,7 +11,8 @@ public class ImageController : MonoBehaviour
     private void Start ()
     {
         imageComponent = GetComponent<Image>();
-        }
+        data.resetValue(100f);
+    }
 
     
     public void UpdateImageHandler()
