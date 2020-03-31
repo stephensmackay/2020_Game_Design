@@ -7,7 +7,7 @@ public class PushableBehavior : MonoBehaviour
 
     public void PushOrStop(GameObject player)
     {
-        if (inPushRange == true)
+        if (inPushRange == true && beingPushed == false)
         {
             transform.parent = player.transform;
         }
