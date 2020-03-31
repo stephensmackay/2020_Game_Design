@@ -16,6 +16,7 @@ public class KeyboardButtons : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             enterButtonDown2.Invoke();
+            Debug.Log("push");
         }
         
         if (Input.GetKeyDown(KeyCode.RightShift))
