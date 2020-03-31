@@ -16,7 +16,7 @@ public class DoorBehaviorScript : MonoBehaviour
         }
         else
         {
-            Debug.Log("You must obtain Key 1 Before proceeding");
+            Debug.Log("You must obtain Key Before proceeding");
         }
     }
 
