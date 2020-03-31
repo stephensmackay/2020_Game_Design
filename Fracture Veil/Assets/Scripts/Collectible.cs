@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public abstract class Collectible : ScriptableObject
+public abstract class Collectible : Collections
 {
     public abstract void Use();
 }
