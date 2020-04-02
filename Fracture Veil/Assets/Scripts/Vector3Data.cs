@@ -1,18 +1,12 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Single Variables/Vector3Data")]
+[CreateAssetMenu]
 public class Vector3Data : ScriptableObject
 {
-    public Vector3 value;
-       
-    public void UpdateValue(Transform obj)
-    {
-        //value = obj.TransformPoint(obj.localPosition);
-        value = obj.position;
-    }
+    public Vector3 Vector3Obj;
 
-    public void UpdateTransform(Transform obj)
+    public void UpdateVector3(Transform transformObj)
     {
-        obj.localPosition = value;  
+        Vector3Obj = transformObj.position;
     }
 }
