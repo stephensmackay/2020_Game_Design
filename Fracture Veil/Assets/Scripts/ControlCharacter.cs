@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Security.Cryptography.X509Certificates;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class ControlCharacter : MonoBehaviour
 {
@@ -8,6 +10,10 @@ public class ControlCharacter : MonoBehaviour
     public Vector3 Location, Orientation;
 
     public float speed = 12f, orientSpeed = 4f, gravity = -9.81f, jumpSpeed = 80f;
+
+    public FloatData health;
+
+    public GameObject endGameCanvas;
     
    
     void Start()
@@ -28,7 +34,7 @@ public class ControlCharacter : MonoBehaviour
         
         
         
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Location.y = jumpSpeed;
         }
@@ -38,6 +44,23 @@ public class ControlCharacter : MonoBehaviour
         
         controller.Move(Location * Time.deltaTime);
 
+        if (health.value <= 0)
+        {
+            TurnOnAndOff(endGameCanvas);
+        }
+        else
+        {
+            return;
+        }
+
+        void TurnOnAndOff(GameObject obj)
+        {
+            obj.SetActive(true);
+        }
+
+       
     }
+    
+    
 
 }
