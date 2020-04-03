@@ -6,17 +6,17 @@ public class DoorBehaviorScript : MonoBehaviour
     public bool canOpen = false;
 
     public Collections list;
+
+    public GameObject textCanvas;
     public void OpenDoor(Collectible obj)
     {
         if (list.collectablesList.Contains(obj))
         {
             canOpen = true;
-            Debug.Log("can open");
-
         }
         else
         {
-            Debug.Log("You must obtain Key Before proceeding");
+            textCanvas.SetActive(true);
         }
     }
 
@@ -25,11 +25,9 @@ public class DoorBehaviorScript : MonoBehaviour
         if (canOpen == true)
         {
             obj.SetActive(false);
-            Debug.Log("opening door");
         }
         else
         {
-            Debug.Log("Door Locked");
             return;
         }
     }
