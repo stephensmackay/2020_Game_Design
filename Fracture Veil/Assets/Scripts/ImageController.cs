@@ -8,10 +8,12 @@ public class ImageController : MonoBehaviour
     //public GameAction imageAction;
     private Image imageComponent;
     public FloatData data;
+    public Collections listData;
     private void Start ()
     {
         imageComponent = GetComponent<Image>();
         data.resetValue(100f);
+        listData.ClearCollection();
     }
 
     
