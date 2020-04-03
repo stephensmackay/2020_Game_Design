@@ -14,6 +14,8 @@ public class ControlCharacter : MonoBehaviour
     public FloatData health;
 
     public GameObject endGameCanvas;
+
+    public int jumpCount = 2;
     
    
     void Start()
@@ -30,13 +32,24 @@ public class ControlCharacter : MonoBehaviour
             Orientation.y = Input.GetAxis("Horizontal") * orientSpeed;
             controller.transform.Rotate(Orientation);
             Location = controller.transform.TransformDirection(Location);
+            jumpCount = 2;
         }
         
         
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Location.y = jumpSpeed;
+            if (jumpCount <= 0)
+            {
+                return;
+            }
+            else
+            {
+                Location.y = jumpSpeed;
+                jumpCount--;
+            }
+            
+            
         }
         
         
