@@ -34,4 +34,9 @@ public class ImageController : MonoBehaviour
         imageComponent.fillAmount = dataObj.value;
         Debug.Log(dataObj.value);
     }
+
+    public void ResetFill()
+    {
+        imageComponent.fillAmount = 1;
+    }
 }
