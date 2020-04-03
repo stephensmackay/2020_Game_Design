@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416d467141f961f47accf3b5d7757d37, type: 3}
   m_Name: Keys
   m_EditorClassIdentifier: 
-  collectablesList: []
+  collectablesList:
+  - {fileID: 11400000, guid: 6d0b7fbdb320be64bab919790a67ca91, type: 2}
+  - {fileID: 11400000, guid: 2f3a6605a9ef42b439eb0a0672bbe7e4, type: 2}
+  - {fileID: 11400000, guid: f226d6748030abe45ab687288efc7890, type: 2}
   currentCollectibleNum: 0
