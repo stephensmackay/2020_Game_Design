@@ -6,6 +6,14 @@ public class BoolData : ScriptableObject
     public bool inPushRange = false;
     public bool beingPushed = false;
     public bool oneActive, twoActive, threeActive, fourActive = false;
+
+    public void ResetSwitches()
+    {
+        oneActive = false;
+        twoActive = false;
+        threeActive = false;
+        fourActive = false; 
+    }
     
     public void SetOneActive()
     {
