@@ -28,7 +28,7 @@ public class ControlCharacter : MonoBehaviour
         if (controller.isGrounded)
         {
             Location.x = (Input.GetAxis("Vertical")*speed);
-            Location.z = 0;
+            Location.z = Input.GetAxis("Horizontal")*speed;
             Orientation.y = Input.GetAxis("Horizontal") * orientSpeed;
             controller.transform.Rotate(Orientation);
             Location = controller.transform.TransformDirection(Location);
