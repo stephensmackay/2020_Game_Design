@@ -3,16 +3,28 @@
 [CreateAssetMenu]
 public class BoolData : ScriptableObject
 {
-    public bool inPushRange = false;
-    public bool beingPushed = false;
     public bool oneActive, twoActive, threeActive, fourActive = false;
+    public bool allActive = false;
 
+    public void ActivePlatform()
+    {
+        if (oneActive == true && twoActive == true && threeActive == true && fourActive == true)
+        {
+            allActive = true;
+        }
+        else
+        {
+            return;
+        }
+    }
+    
     public void ResetSwitches()
     {
         oneActive = false;
         twoActive = false;
         threeActive = false;
-        fourActive = false; 
+        fourActive = false;
+        allActive = false;
     }
     
     public void SetOneActive()
