@@ -1,23 +1,14 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu]
 public class BoolData : ScriptableObject
 {
-    public bool oneActive, twoActive, threeActive, fourActive = false;
-    public bool allActive = false;
-
-    public void ActivePlatform()
-    {
-        if (oneActive == true && twoActive == true && threeActive == true && fourActive == true)
-        {
-            allActive = true;
-        }
-        else
-        {
-            return;
-        }
-    }
+    public static bool oneActive, twoActive, threeActive, fourActive = false;
+    public static bool allActive = false;
     
+
+   
     public void ResetSwitches()
     {
         oneActive = false;
