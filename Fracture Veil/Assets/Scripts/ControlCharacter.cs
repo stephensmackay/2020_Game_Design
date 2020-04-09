@@ -9,7 +9,7 @@ public class ControlCharacter : MonoBehaviour
 
     public Vector3 Location, Orientation;
 
-    public float speed = 12f, orientSpeed = 4f, gravity = -9.81f, jumpSpeed = 80f;
+    public float speed = 12f, orientSpeed = 4f, gravity = -9.81f, jumpSpeed = 40f;
 
     public FloatData health;
 
