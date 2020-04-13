@@ -10,6 +10,8 @@ public class StringListData : ScriptableObject
     public List<string> stringListObj;
     public int currentLineNumber;
 
+    //puiblic int 
+
     public string ReturnCurrentLine()
     {
         return stringListObj[currentLineNumber];
