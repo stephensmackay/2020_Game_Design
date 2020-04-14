@@ -4,7 +4,7 @@ using UnityEngine.Timeline;
 public class EnemyHealthBehavior : MonoBehaviour
 {
 
-    //public GameObject thisObj;
+    public GameObject objectToAppear1, objectToAppear2;
     public int enemyHealth = 5;
 
     public void modifyHealth(int amount)
@@ -18,10 +18,12 @@ public class EnemyHealthBehavior : MonoBehaviour
         if (enemyHealth == 0)
         {
             Debug.Log("Destroy");
+            objectToAppear1.SetActive(true);
+            objectToAppear2.SetActive(true);
             gameObject.SetActive(false);
         }
         
     }
-
+    
    
 }
