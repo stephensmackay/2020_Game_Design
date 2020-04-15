@@ -120,6 +120,97 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: b7d7057d17e5cd0489f2b64ab85e37aa, type: 2}
+--- !u!1 &27417351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 27417352}
+  - component: {fileID: 27417355}
+  - component: {fileID: 27417354}
+  - component: {fileID: 27417353}
+  m_Layer: 0
+  m_Name: Cube (34)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &27417352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27417351}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 57.61, y: 11.511425, z: -168.19}
+  m_LocalScale: {x: 10.412721, y: 5.53111, z: 0.3557}
+  m_Children: []
+  m_Father: {fileID: 636929397}
+  m_RootOrder: 200
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &27417353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27417351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &27417354
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27417351}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1dc9d7fa06ba3654780693c7fcdc1dea, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &27417355
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27417351}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &27598988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,7 +1945,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146065314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9, y: -1.75, z: 73.95}
+  m_LocalPosition: {x: -20.8, y: -1.75, z: 73.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3414,7 +3505,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 1
+  holdTime: 0.01
 --- !u!65 &286111535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3786,7 +3877,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: To Jump, press the Space Bar
+  m_Text: To Double Jump, press the Space Bar twice
 --- !u!222 &293159893
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4885,7 +4976,7 @@ GameObject:
   - component: {fileID: 386817706}
   - component: {fileID: 386817705}
   - component: {fileID: 386817709}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: Switch2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6248,7 +6339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473829009}
   m_LocalRotation: {x: -0.30424923, y: 0.6402904, z: -0.30535752, w: -0.63578105}
-  m_LocalPosition: {x: 15.700002, y: 27.650002, z: 29.04}
+  m_LocalPosition: {x: 15.810001, y: 27.650002, z: 28.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 257553443}
@@ -7296,7 +7387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: -0.30424923, y: 0.6402904, z: -0.30535752, w: -0.63578105}
-  m_LocalPosition: {x: 15.700002, y: 27.650002, z: 29.04}
+  m_LocalPosition: {x: 15.810001, y: 27.650002, z: 28.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9304,6 +9395,8 @@ Transform:
   - {fileID: 516304073}
   - {fileID: 288370529}
   - {fileID: 482677418}
+  - {fileID: 27417352}
+  - {fileID: 1477961384}
   m_Father: {fileID: 0}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9652,7 +9745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &668902128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10517,7 +10610,7 @@ GameObject:
   - component: {fileID: 736016233}
   - component: {fileID: 736016232}
   - component: {fileID: 736016236}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: Switch1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11698,7 +11791,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 1
+  holdTime: 0.01
 --- !u!65 &799283221
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11989,7 +12082,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 0.5
+  holdTime: 0.01
 --- !u!65 &826316696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12377,7 +12470,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 0.01
+  holdTime: 1
 --- !u!135 &835672891
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14287,7 +14380,7 @@ GameObject:
   - component: {fileID: 940549472}
   - component: {fileID: 940549471}
   - component: {fileID: 940549475}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: Switch4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16844,7 +16937,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 0.01
+  holdTime: 1
 --- !u!135 &1078347199
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20346,7 +20439,7 @@ PrefabInstance:
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.86
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
@@ -20356,7 +20449,7 @@ PrefabInstance:
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.64
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
@@ -21243,7 +21336,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 0.01
+  holdTime: 1
 --- !u!135 &1299490656
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23641,7 +23734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447579510}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.39, y: 7.7, z: 29.54}
+  m_LocalPosition: {x: 0.5, y: 7.7, z: 29.1}
   m_LocalScale: {x: 1.988746, y: 1.988746, z: 1.988746}
   m_Children:
   - {fileID: 2089966794}
@@ -24257,6 +24350,97 @@ Transform:
   m_Father: {fileID: 636929397}
   m_RootOrder: 172
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1477961383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1477961384}
+  - component: {fileID: 1477961387}
+  - component: {fileID: 1477961386}
+  - component: {fileID: 1477961385}
+  m_Layer: 0
+  m_Name: Cube (189)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1477961384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477961383}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 71.43, y: 11.511425, z: -168.19}
+  m_LocalScale: {x: 6.7105823, y: 5.53111, z: 0.3557}
+  m_Children: []
+  m_Father: {fileID: 636929397}
+  m_RootOrder: 201
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1477961385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477961383}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1477961386
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477961383}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1dc9d7fa06ba3654780693c7fcdc1dea, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1477961387
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477961383}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1487313331
 GameObject:
   m_ObjectHideFlags: 0
@@ -25836,7 +26020,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 1
+  holdTime: 0.01
 --- !u!65 &1586826002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25951,7 +26135,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 0.01
+  holdTime: 1
 --- !u!135 &1591977885
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26018,7 +26202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591977883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.8, y: 13.08, z: 68.2}
+  m_LocalPosition: {x: -18.7, y: -1.2, z: 68.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30091,6 +30275,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1927444026}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   holdTime: 3
@@ -30419,7 +30614,7 @@ GameObject:
   - component: {fileID: 1939129258}
   - component: {fileID: 1939129257}
   - component: {fileID: 1939129261}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: Switch3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31688,7 +31883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2087982767
 MonoBehaviour:
   m_ObjectHideFlags: 0
