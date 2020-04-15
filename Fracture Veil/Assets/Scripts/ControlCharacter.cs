@@ -12,14 +12,23 @@ public class ControlCharacter : MonoBehaviour
 
     public FloatData health;
 
-    public GameObject endGameCanvas;
+    public GameObject endGameCanvas, swordTrigger, attackTrigger;
 
     public int jumpCount = 2;
+
+    public MeshRenderer renderer;
+
+    public CapsuleCollider capsuleCollider;
+
+    public BoxCollider boxCollider;
     
    
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        renderer = GetComponent<MeshRenderer>();
+        capsuleCollider = GetComponent<CapsuleCollider>();
+        boxCollider = GetComponent<BoxCollider>();
     }
 
     void Update()
@@ -68,6 +77,18 @@ public class ControlCharacter : MonoBehaviour
         void TurnOnAndOff(GameObject obj)
         {
             obj.SetActive(true);
+        }
+
+        void DefendOn()
+        {
+            capsuleCollider.isTrigger = false;
+            boxCollider.isTrigger = false;
+        }
+
+        void DefendOff()
+        {
+            capsuleCollider.isTrigger = true;
+            boxCollider.isTrigger = true; 
         }
 
        
