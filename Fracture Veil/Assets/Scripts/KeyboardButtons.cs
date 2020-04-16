@@ -12,13 +12,7 @@ public class KeyboardButtons : MonoBehaviour
         {
             enterButtonDown.Invoke();
         }
-        
-        //if (Input.GetKeyDown(KeyCode.L))
-        //{
-        //    enterButtonDown2.Invoke();
-        //    Debug.Log("push");
-        //}
-        
+
         if (Input.GetKeyDown(KeyCode.K))
         {
             enterButtonDown3.Invoke();

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Security.Cryptography.X509Certificates;
+using UnityEngine;
 
 
 public class ControlCharacter : MonoBehaviour
@@ -12,23 +13,14 @@ public class ControlCharacter : MonoBehaviour
 
     public FloatData health;
 
-    public GameObject endGameCanvas, swordTrigger, attackTrigger;
+    public GameObject endGameCanvas;
 
     public int jumpCount = 2;
-
-    public MeshRenderer renderer;
-
-    public CapsuleCollider capsuleCollider;
-
-    public BoxCollider boxCollider;
     
    
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        renderer = GetComponent<MeshRenderer>();
-        capsuleCollider = GetComponent<CapsuleCollider>();
-        boxCollider = GetComponent<BoxCollider>();
     }
 
     void Update()
@@ -79,21 +71,11 @@ public class ControlCharacter : MonoBehaviour
             obj.SetActive(true);
         }
 
-        void DefendOn()
-        {
-            capsuleCollider.isTrigger = false;
-            boxCollider.isTrigger = false;
-        }
-
-        void DefendOff()
-        {
-            capsuleCollider.isTrigger = true;
-            boxCollider.isTrigger = true; 
-        }
-
-       
+     
     }
     
+   
+
     
 
 }
