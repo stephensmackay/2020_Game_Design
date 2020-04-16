@@ -1,5 +1,7 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Numerics;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 
 public class ControlCharacter : MonoBehaviour
@@ -18,6 +20,10 @@ public class ControlCharacter : MonoBehaviour
     public int jumpCount = 2;
 
     public MeshRenderer meshRenderer;
+
+    public Vector3Data checkpointPosition;
+
+    public GameObject player, destination;
     
    
     void Start()
@@ -79,8 +85,12 @@ public class ControlCharacter : MonoBehaviour
 
      
     }
-    
-   
+
+    public void CheckpointReset()
+    {
+        Debug.Log("resetting");
+        player.transform.position = destination.transform.position;
+    }
 
     
 
