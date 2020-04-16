@@ -30,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866151054494117137}
-  m_LocalRotation: {x: -0, y: 0.7684383, z: -0, w: 0.63992393}
+  m_LocalRotation: {x: 0, y: 0.7684399, z: 0, w: 0.63992196}
   m_LocalPosition: {x: -49.465, y: 1.59, z: 125.09}
   m_LocalScale: {x: 2.399348, y: 2.399348, z: 2.399348}
   m_Children:
@@ -177,7 +177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e70af223807d34490c74753b845b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 5
+  objectToAppear1: {fileID: 0}
+  objectToAppear2: {fileID: 0}
+  enemyHealth: 10
 --- !u!1 &866151055682105884
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,13 +558,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4769293561980396347}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7142933, w: 0.69984657}
-  m_LocalPosition: {x: 0.39442644, y: -0.49, z: -0.5598327}
+  m_LocalRotation: {x: -0.26227134, y: 0.2569669, z: -0.6644007, w: 0.6509636}
+  m_LocalPosition: {x: 0.42999926, y: 0.44000006, z: -0.92999965}
   m_LocalScale: {x: 0.24408057, y: 0.7066794, z: 0.24408041}
   m_Children: []
   m_Father: {fileID: 4769293561147003788}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.171005}
+  m_LocalEulerAnglesHint: {x: 0, y: 43.083, z: -91.171005}
 --- !u!33 &4769293561980396351
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -666,4 +668,4 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 3
+  holdTime: 0.01
