@@ -21,9 +21,6 @@ public class ControlCharacter : MonoBehaviour
 
     public MeshRenderer meshRenderer;
 
-    public Vector3Data checkpointPosition;
-
-    public GameObject player, destination;
     
    
     void Start()
@@ -86,10 +83,9 @@ public class ControlCharacter : MonoBehaviour
      
     }
 
-    public void CheckpointReset()
+    public void CheckpointReset(Vector3Data data)
     {
-        Debug.Log("resetting");
-        player.transform.position = destination.transform.position;
+        transform.position = data.Vector3Obj;
     }
 
     
