@@ -16,11 +16,14 @@ public class ControlCharacter : MonoBehaviour
     public GameObject endGameCanvas;
 
     public int jumpCount = 2;
+
+    public MeshRenderer meshRenderer;
     
    
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        meshRenderer = GetComponent<MeshRenderer>();
     }
 
     void Update()
@@ -48,15 +51,18 @@ public class ControlCharacter : MonoBehaviour
                 Location.y = jumpSpeed;
                 jumpCount--;
             }
-            
-            
         }
-        
-        
+
+
         Location.y += gravity;
         
         controller.Move(Location * Time.deltaTime);
 
+        if (meshRenderer.enabled == false)
+        {
+            meshRenderer.enabled = true;
+        }
+        
         if (health.value <= 0)
         {
             TurnOnAndOff(endGameCanvas);
