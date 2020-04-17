@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Timeline;
+
 
 public class EnemyHealthBehavior : MonoBehaviour
 {
@@ -9,7 +9,6 @@ public class EnemyHealthBehavior : MonoBehaviour
 
     public void modifyHealth(int amount)
     {
-        Debug.Log(message: "beingattacked");
         enemyHealth += amount;
     }
 
@@ -17,13 +16,12 @@ public class EnemyHealthBehavior : MonoBehaviour
     {
         if (enemyHealth == 0)
         {
-            Debug.Log("Destroy");
             objectToAppear1.SetActive(true);
             objectToAppear2.SetActive(true);
             gameObject.SetActive(false);
         }
         
     }
+
     
-   
 }
