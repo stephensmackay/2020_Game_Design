@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6277,7 +6277,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 874.6, y: 30}
+  m_SizeDelta: {x: 675.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439202548
 MonoBehaviour:
@@ -28177,7 +28177,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -425.94}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 141.59, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606520856
 MonoBehaviour:
@@ -35009,10 +35009,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 318417506368323838, guid: f4b6796544825944ca60edf033c8d163,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100154734903118662, guid: f4b6796544825944ca60edf033c8d163,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 675.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804559850748087603, guid: f4b6796544825944ca60edf033c8d163,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 668902127}
     - target: {fileID: 3660162434748189715, guid: f4b6796544825944ca60edf033c8d163,
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660162434748189715, guid: f4b6796544825944ca60edf033c8d163,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3326306045055454867, guid: f4b6796544825944ca60edf033c8d163,
         type: 3}
@@ -35119,11 +35139,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1804559850748087603, guid: f4b6796544825944ca60edf033c8d163,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 668902127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4b6796544825944ca60edf033c8d163, type: 3}
 --- !u!1001 &5034155023556700782
