@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PushableBehavior : MonoBehaviour
 {
@@ -26,7 +25,6 @@ public class PushableBehavior : MonoBehaviour
             beingPushed = true;
             art1.SetActive(false);
             art2.SetActive(false);
-            Debug.Log("push");
         }
         else if (buttonPushed == true)
         {

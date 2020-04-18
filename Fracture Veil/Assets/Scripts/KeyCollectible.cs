@@ -13,13 +13,5 @@ public class KeyCollectible : Collectible
 
     
 
-    //public void Fire()
-    //{
-    //    Debug.Log("Fire");   
-    //}
-
-    //public void Attack()
-    //{
-    //    
-    //}
+  
 }
