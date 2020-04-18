@@ -82,6 +82,7 @@ public class ControlCharacter : MonoBehaviour
         transform.position = data.Vector3Obj;
     }
 
+   
     
 
 }

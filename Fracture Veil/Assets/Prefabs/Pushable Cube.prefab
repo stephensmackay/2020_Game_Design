@@ -58,6 +58,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: LowerSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   triggerExitEvent:
@@ -65,6 +76,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3037328831881270703}
         m_MethodName: ExitRange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: RaiseSpeed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -200,6 +222,8 @@ MonoBehaviour:
   buttonPushed: 0
   beingPushed: 0
   player: {fileID: 0}
+  art1: {fileID: 0}
+  art2: {fileID: 0}
 --- !u!54 &965270292
 Rigidbody:
   m_ObjectHideFlags: 0
