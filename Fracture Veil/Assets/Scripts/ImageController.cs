@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
@@ -19,7 +18,6 @@ public class ImageController : MonoBehaviour
     
     public void UpdateImageHandler()
     {
-        Debug.Log("Got");
         imageComponent.fillAmount = data.value;
     }
 	

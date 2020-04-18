@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
+
 
 [CreateAssetMenu]
 public class BoolData : ScriptableObject
@@ -31,7 +31,7 @@ public class BoolData : ScriptableObject
     public void SetTwoActive()
     {
         twoActive = true;
-        Debug.Log("activate");
+        
     }
 
     public void SetTwoFalse()
