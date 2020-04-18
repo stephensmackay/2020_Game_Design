@@ -1983,7 +1983,7 @@ PrefabInstance:
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
@@ -2547,7 +2547,7 @@ RectTransform:
   m_Children:
   - {fileID: 528733013}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2961,7 +2961,7 @@ PrefabInstance:
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
@@ -3022,7 +3022,6 @@ GameObject:
   m_Component:
   - component: {fileID: 167766923}
   - component: {fileID: 167766922}
-  - component: {fileID: 167766921}
   - component: {fileID: 167766920}
   - component: {fileID: 167766919}
   m_Layer: 0
@@ -3048,13 +3047,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: f1aed466fd3216e409b16e749284da2a, type: 2}
-        m_MethodName: modifyValue
+        m_MethodName: resetValue
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -100
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -3062,10 +3061,21 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   triggerExitEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1776011595}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 3
+  holdTime: 0.01
 --- !u!65 &167766920
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3079,43 +3089,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &167766921
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167766918}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!33 &167766922
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3132,8 +3105,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167766918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -98.6, y: 8.7, z: 203.8}
-  m_LocalScale: {x: 113.86208, y: 1.1766376, z: 113.86208}
+  m_LocalPosition: {x: -98.6, y: 22, z: 203.8}
+  m_LocalScale: {x: 148.31676, y: 1.5326883, z: 148.31676}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 95
@@ -3165,7 +3138,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.5849056, g: 0.45536774, b: 0.10208259, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -3211,7 +3184,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 7.17e-43, y: 0, z: 5.9e-44, w: 0.06640625}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3227,7 +3200,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &183480173
 GameObject:
@@ -6671,9 +6644,9 @@ MonoBehaviour:
     Level 1: To begin to set the world right you have traveled to the Dimension of
     Death. While here you must find the 4 shards of the broken Fylandrian Crystal.
     Take the pieces back to their rightful resting place to join them together once
-    again and defeat the guardian to return to the Realm of the living. Once you have
-    done this, the spirits of the dead will not be able to remain in the Realm of
-    the living jumping from host to host. '
+    again after defeating the guardian to return to the Realm of the living. Once
+    you have done this, the spirits of the dead will not be able to remain in the
+    Realm of the living jumping from host to host. '
 --- !u!222 &439202549
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7307,12 +7280,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473829009}
   m_LocalRotation: {x: -0.30424923, y: 0.6402904, z: -0.30535752, w: -0.63578105}
-  m_LocalPosition: {x: 37.61, y: 28.75, z: -8.3}
+  m_LocalPosition: {x: 36.03, y: 27.550001, z: -8.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 257553443}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 51.069004, y: 269.537, z: -0.12200001}
 --- !u!1 &482677414
 GameObject:
@@ -8355,7 +8328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: -0.30424923, y: 0.6402904, z: -0.30535752, w: -0.63578105}
-  m_LocalPosition: {x: 37.61, y: 28.75, z: -8.3}
+  m_LocalPosition: {x: 36.03, y: 27.550001, z: -8.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10816,7 +10789,7 @@ RectTransform:
   - {fileID: 316424692}
   - {fileID: 1798418548}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11193,14 +11166,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1476404781}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   triggerExitEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1476404781}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 3
+  holdTime: 0.01
 --- !u!136 &687171747
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12999,7 +12994,7 @@ PrefabInstance:
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
@@ -14267,6 +14262,133 @@ Transform:
   m_Father: {fileID: 636929397}
   m_RootOrder: 194
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &864027059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864027061}
+  - component: {fileID: 864027060}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &864027060
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864027059}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c4b19fe1dcb194447b297a273613abc7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.333
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &864027061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864027059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -150.89787, y: -103.43274, z: 28.12593}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 96
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &864475625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18186,7 +18308,7 @@ Transform:
   - {fileID: 113334839}
   - {fileID: 1390157362}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1064207948
 MonoBehaviour:
@@ -18333,7 +18455,7 @@ PrefabInstance:
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
@@ -18668,7 +18790,7 @@ PrefabInstance:
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
@@ -19477,7 +19599,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116402400}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1082351333}
@@ -19914,7 +20036,7 @@ RectTransform:
   m_Children:
   - {fileID: 1417657251}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -21206,7 +21328,7 @@ PrefabInstance:
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
@@ -22208,7 +22330,7 @@ PrefabInstance:
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
@@ -22592,7 +22714,7 @@ RectTransform:
   m_Children:
   - {fileID: 1635488612}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -23985,7 +24107,7 @@ PrefabInstance:
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
@@ -24174,7 +24296,7 @@ PrefabInstance:
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
@@ -25328,14 +25450,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1064207945}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   triggerExitEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1064207945}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  holdTime: 3
+  holdTime: 0.01
 --- !u!136 &1390157365
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25803,13 +25947,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447579510}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 22.3, y: 8.8, z: -7.8}
+  m_LocalPosition: {x: 20.72, y: 7.6, z: -8.4}
   m_LocalScale: {x: 1.988746, y: 1.988746, z: 1.988746}
   m_Children:
   - {fileID: 2089966794}
   - {fileID: 1937512316}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1447579515
 MonoBehaviour:
@@ -28677,7 +28821,7 @@ RectTransform:
   m_Children:
   - {fileID: 448585411}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -31457,7 +31601,7 @@ RectTransform:
   - {fileID: 652083700}
   - {fileID: 734564212}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -34459,7 +34603,7 @@ RectTransform:
   m_Children:
   - {fileID: 754580604}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -34531,7 +34675,7 @@ PrefabInstance:
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3037328831881270698, guid: c70835329c247b442ba6946f90770b0f,
         type: 3}
@@ -34887,7 +35031,7 @@ RectTransform:
   - {fileID: 1554095445}
   - {fileID: 1772717294}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -35639,6 +35783,19 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 675.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2251019597202350527, guid: f4b6796544825944ca60edf033c8d163,
+        type: 3}
+      propertyPath: m_Text
+      value: 'The Fractured Veil
+
+
+        Level 1: To begin to set the world right you have traveled to the Dimension
+        of Death. While here you must find the 4 shards of the broken Fylandrian Crystal.
+        Take the pieces back to their rightful resting place to join them together
+        once again after defeating the guardian to return to the Realm of the living.
+        Once you have done this, the spirits of the dead will not be able to remain
+        in the Realm of the living jumping from host to host. '
+      objectReference: {fileID: 0}
     - target: {fileID: 1804559850748087603, guid: f4b6796544825944ca60edf033c8d163,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -35979,7 +36136,7 @@ PrefabInstance:
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5632526430992415116, guid: 9e7fb47a133b3b54f9b862b32af0271c,
         type: 3}
