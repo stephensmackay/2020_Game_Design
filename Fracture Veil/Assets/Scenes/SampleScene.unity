@@ -32577,7 +32577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToAppear1: {fileID: 86144472}
   objectToAppear2: {fileID: 86144472}
-  enemyHealth: 45
+  enemyHealth: 38
   enemyDeathEvent:
     m_PersistentCalls:
       m_Calls:
