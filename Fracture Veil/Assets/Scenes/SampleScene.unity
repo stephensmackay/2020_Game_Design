@@ -3226,6 +3226,12 @@ Transform:
   m_Father: {fileID: 636929397}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &212949898 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5632526430992415106, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1033711193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &217779855
 GameObject:
   m_ObjectHideFlags: 0
@@ -4337,7 +4343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18652792, g: 0.21698111, b: 0.18320575, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4357,7 +4363,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: To Double Jump, press the Space Bar twice
+  m_Text: To Jump, press the Space Bar
 --- !u!222 &293159893
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16658,6 +16664,10 @@ PrefabInstance:
       propertyPath: objectToAppear2
       value: 
       objectReference: {fileID: 86144472}
+    - target: {fileID: 519475967, guid: 9e7fb47a133b3b54f9b862b32af0271c, type: 3}
+      propertyPath: enemyHealth
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1149871938, guid: 9e7fb47a133b3b54f9b862b32af0271c, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -16693,6 +16703,56 @@ PrefabInstance:
     - target: {fileID: 1149871938, guid: 9e7fb47a133b3b54f9b862b32af0271c, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
       value: HitPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 212949898}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 212949898}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452048980643636, guid: 9e7fb47a133b3b54f9b862b32af0271c,
+        type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e7fb47a133b3b54f9b862b32af0271c, type: 3}
@@ -24396,7 +24456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18652792, g: 0.21698111, b: 0.18320575, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -27822,7 +27882,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -272.57}
-  m_SizeDelta: {x: 439.4, y: 30}
+  m_SizeDelta: {x: 387.4, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345364578
 MonoBehaviour:
@@ -27837,7 +27897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18652792, g: 0.21698111, b: 0.18320575, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -28326,7 +28386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18652792, g: 0.21698111, b: 0.18320575, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -29337,11 +29397,11 @@ MonoBehaviour:
   Orientation: {x: 0, y: 0, z: 0}
   speed: 12
   orientSpeed: 4
-  gravity: -9.81
-  jumpSpeed: 50
+  gravity: -9.31
+  jumpSpeed: 60
   health: {fileID: 11400000, guid: f1aed466fd3216e409b16e749284da2a, type: 2}
   endGameCanvas: {fileID: 1776011595}
-  jumpCount: 2
+  jumpCount: 1
 --- !u!114 &1447579516
 MonoBehaviour:
   m_ObjectHideFlags: 0

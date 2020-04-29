@@ -36,7 +36,7 @@ public class ControlCharacter : MonoBehaviour
             Orientation.y = Input.GetAxis("Horizontal") * orientSpeed;
             controller.transform.Rotate(Orientation);
             Location = controller.transform.TransformDirection(Location);
-            jumpCount = 2;
+            jumpCount = 1;
         }
         
         
