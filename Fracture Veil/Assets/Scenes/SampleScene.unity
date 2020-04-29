@@ -1871,6 +1871,11 @@ PrefabInstance:
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8548888905644252069, guid: 4d8dfcfcbaec2c64095ffbc60bd457f5,
+        type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d8dfcfcbaec2c64095ffbc60bd457f5, type: 3}
 --- !u!1 &117362322
@@ -15253,6 +15258,11 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8548888905644252069, guid: 4d8dfcfcbaec2c64095ffbc60bd457f5,
+        type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d8dfcfcbaec2c64095ffbc60bd457f5, type: 3}
@@ -31039,7 +31049,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -272.57}
-  m_SizeDelta: {x: 453, y: 30}
+  m_SizeDelta: {x: 326.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1363203088
 MonoBehaviour:
@@ -31063,11 +31073,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
